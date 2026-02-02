@@ -10,7 +10,7 @@ int main() {
         float dt = GetFrameTime();
         if (IsKeyDown(KEY_W)) p1.y -= p1.speed * dt;
         if (IsKeyDown(KEY_S)) p1.y += p1.speed * dt;
-        if (IsKeyDown(KEY_UP)) p2.y -= p2.speed * dt;
+        if (p2.y + 50 < b.y) p2.y += p2.speed * dt; else p2.y -= p2.speed * dt;
         if (IsKeyDown(KEY_DOWN)) p2.y += p2.speed * dt;
         b.x += b.speedX * dt; b.y += b.speedY * dt;
         BeginDrawing();
