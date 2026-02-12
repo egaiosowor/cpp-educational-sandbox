@@ -32,6 +32,12 @@
 *.app
 games/pong/Pong
 games/clicker/Clicker
+games/snake/Snake
+advanced/game_of_life/GameOfLife
+advanced/solar_system/SolarSystem
+
+# Generated scripts
+games/snake/generate_sounds.py
 
 # CMake
 CMakeCache.txt
